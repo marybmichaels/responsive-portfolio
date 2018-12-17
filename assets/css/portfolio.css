@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+p {
+    font-size: 11pt;
+    font-weight: 200;
+    color: #929aab;
+    line-height: 120%;
+    letter-spacing: .05em;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: 800;
+    color: #393e46;
+    line-height: 160%;
+    letter-spacing: 1.5px;
+}
+
+button {
+    display: inline-block;
+    border-radius: 21px;
+    background-color: #ff2943;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 14px;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.portfolioImg {
+    float:left;
+    margin-right: 20px;
+}
+
+.imgDetails {
+    position: relative;
+    float:left;
+    height: 280px;
+    width: 150px;
+}
+
+.imgDetails button {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .imgDetails {
+        position: relative;
+        float:left;
+        height: auto;
+        width: 150px;
+    }
+}
